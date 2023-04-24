@@ -1,13 +1,12 @@
 #!/usr/bin/python3
+
 """
 A script that starts a Flask web application:
-          web application listening on 0.0.0.0, port 5000
-          Routes:
-            /: display “Hello HBNB!”
-            /hbnb: display “HBNB”
-            /c/<text>: display “C ” followed by the value of the text variable (replace underscore _ symbols with a space )
+web application listening on 0.0.0.0, port 5000
+Routes:
+    /: display “Hello HBNB!”
+    /hbnb: display “HBNB”
 """
-
 
 from flask import Flask
 
@@ -32,4 +31,3 @@ def c(text):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-
